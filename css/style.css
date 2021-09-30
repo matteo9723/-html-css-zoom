@@ -1,33 +1,150 @@
+/* GLOBAL  */
+
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 body{
   background-color: black;
 }
 
+/* NAV  */
+
 nav{
   background-color: black;
   width: 100%;
-  height:60px;
   position: fixed;
   z-index: 999;
-  
+  display: flex;
+  justify-content: flex-end;
 }
+
+nav .box-uno, nav .box-due{
+  height: 25px;
+  display: inline-block;
+  background-color: rgb(73, 68, 68);
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+nav .box-uno i,nav .box-uno span , nav .box-due i{
+  color: white;
+}
+
+/* CONTAINER-FLEX  */
 
 .container-flex{
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+  position: relative;
 }
 
 .item{
-  margin:5px 5px;
-  height: 100px;
-  width: 180px;
-  background-color: aqua;
-  border: 2px solid yellow;
+  margin:1.5px 3px;
+  width: 185px;
+  background-color: aqu;
   display: inline-block;
+  position: relative;
+ }
+
+.item img{
+   width: 100%;
+ }
+
+.item .user{
+   position: absolute;
+   bottom: 3px;
+   color: white;
+   background-color: rgba(0, 0, 0, .5);
+   padding: 4px;
+ }
+
+/* FOOTER  */
+
+
+footer{
+   width: 100%;
+   height: 70px;
+   background-color: rgb(73, 68, 68);
+   padding: 2px 5px;
+   position: fixed;
+   z-index: 999;
+   bottom: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+ }
+
+footer .box{
+   height: 100%;
+   margin: 0;
+   display: flex;
+   align-items: center;
+
+  }
+
+footer .box i{
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
+
+.fas.fa-angle-up{
+  font-size: 16px;
+}
+
+footer .box.uno{
+    width: 150px;
+  }
+
+footer .box.due{
+    width: 700px;
+  }
+
+footer .box.tre{
+    margin-right: -5px;
+    height: 70px;  
+    width: 100px;
+    justify-content: center;
+    border-radius:0 0 10px 0;
+    background-color: gray;
+  }
+  
+ footer .box .item{
+   text-align: center;
+ }
+
+ #angle{
+   width: 10%;
+ }
+
+ #manage-partecipans{
+   width: 240px;
+ }
+
+ h6{
+   color: white;
+   cursor: pointer;
+ }
+
+ .fas.fa-share-square{
+   color: green;
+ }
+
+ footer .box.tre h6{
+   color: red;
+ }
+
+ .fas.fa-plus{
+   font-size: 10px;
+   position: absolute;
+   top: 5px;
+ }
